@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+	margin: 0%;
+	padding: 0%;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+body{
+	background-color: rgb(26, 26, 26);
+}
+header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+}
+header h1{
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	font-size: 32px;
+	margin-left: 20px;
+}
+header ul {
+	display: flex;
+	justify-content: flex-end;
+	gap: 20px;
+	margin-right: 20px;
+}
+header li {
+	list-style: none;
+}
+
+header ul li a{
+	justify-content: flex-end;
+	text-decoration: none;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+}
+header ul li a:hover{
+	justify-content: flex-end;
+	text-decoration: none;
+	color: orange;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	transition: 0.5s;
+}
+.wrapper{
+	margin: 40px;
+	margin-top: 100px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+}
+.presentation{
+	position: relative;
+	font-size: 44px;
+	color: rgb(57, 56, 56);
+	width: 48.3%;
+}
+.presentation::before{
+content: attr(data-text);
+position: absolute;
+color: orange;
+width: 100%;
+overflow: hidden;
+white-space: nowrap;
+border-right: 4px solid orange;
+animation: animate 6s linear infinite;
+filter: drop-shadow(0 0 60px orange) drop-shadow(0 0 10px orange);
+}
+@keyframes animate {
+	0%,10%,100%{
+		width: 0%;
+	}
+	70%,90%{
+   width: 100%;
+	}
+}
+.photo-profil{
+	width: 250px;
+	height: 270px;
+	border-radius: 100%;
+}
+.a-propos {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 100px;
+}
+.a-propos h2 {
+	color: white;
+	font-family: 'Poppins', sans-serif;
+}
+.a-propos p{
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	line-height: 1.5em;
+}
+.a-propos a{
+	text-decoration: none;
+	color: orange;
+}
+.a-propos a:hover{
+	text-decoration: none;
+	color: orange;
+	font-weight: bold;
+}
+.big-competences{
+	margin-top: 60px;
+}
+.titre-competences {
+	color: orange;
+	filter: drop-shadow(0 0 60px orange) drop-shadow(0 0 10px orange);
+	font-size: 44px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: underline;
+}
+.stack-competences{
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+.stack-competences h2{
+	color: orange;
+	filter: drop-shadow(0 0 60px orange) drop-shadow(0 0 10px orange);
+	font-size: 32px;
+	font-weight: bold;
+}
+.competences {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 1200px;
+	flex-wrap: wrap;
+	z-index: 1;
+}
+.container .card {
+	position: relative;
+	width: 240px;
+	height: 400px;
+	margin: 30px;
+	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+	background: rgba(255, 255, 255, 0.1);
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+	border-left: 1px solid rgba(255, 255, 255, 0.5);
+	backdrop-filter: blur(5px);
+}
+.container .card .content{
+	padding: 20px;
+	text-align: center;
+	/* SI TU VEUX FAIRE UNE ANIMATION HOVER enleve les commentaires dessus */
+	/* transform: translateY(100px);
+	opacity: 0; */
+	/* transition: 0.5s; */
+}
+/* .container .card:hover .content{ */
+	/* transform: translateY(0px);
+	opacity: 1; */
+/* } */
+.container .card img{
+	height: 100px;
+	width: 100px;
+	position: relative;
+	z-index: -1;
+	opacity: 0.5;
+	pointer-events: none;
+}
+.container .card .content .javascript-logo{
+	width: 200px;
+	height: 110px;
+	position: relative;
+}
+.container .card .content .photoshop{
+position: relative;
+	top: 10px;
+}
+.container .card .content .premier-pro{
+	position: relative;
+	top: 10px;
+}
+/* .container .card .content h2 {
+	position: absolute;
+	top: -60px;
+	right: 30px;
+	font-size: 8em;
+	color: rgba(255, 255, 255, 0.05);
+	pointer-events: none;
+} */
+.container .card .content h3 {
+	font-size: 1.8em;
+	color: white;
+	z-index: 1;
+
+}
+.container .card .content p {
+	font-size: 1em;
+	color: white;
+	font-weight: 300;
+}
+.container .card .content a {
+	position: relative;
+	display: inline-block;
+	padding: 8px 20px;
+	margin-top: 15px;
+	background: white;
+	color: black;
+	border-radius: 20px;
+	text-decoration: none;
+	font-weight: 500;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.container .card .content .logo-social-media{
+	display: flex;
+	gap: 20px;
+	margin: 10px;
+	align-items: center;
+	justify-content: center;
+}
+.container .card .content .logo-social-media img{
+	gap: 20px;
+	width: 60px;
+	height: 60px;
+}
+h2{
+	color: white;
+}
+p {
+	color: white;
+}
+.container-parcours {
+	display: flex;
+	margin: 20px;
+	align-items: center;
+	justify-content: space-between;
+}
+.container-parcours img{
+width: 400px;
+height: 400px;
+}
+.text-parcours{
+	gap: 30px;
+}
+.text-parcours h2{
+	font-size: 32px;
+	color: orange;
+	filter: drop-shadow(0 0 60px orange) drop-shadow(0 0 10px orange)
+}
+.text-parcours a {
+	text-decoration: none;
+	color: orange;
+}
+.text-parcours a:hover {
+	text-decoration: none;
+	color: orange;
+	font-weight: bold;
+}
+.container-projet {
+	margin: 20px;
+}
+.container-projet h2 {
+	font-size: 32px;
+	color: orange;
+	text-align: center;
+	text-decoration: underline;
+	filter: drop-shadow(0 0 60px orange) drop-shadow(0 0 10px orange)
+}
+.slide {
+	padding-top: 80px;
+	padding-bottom: 80px;
+	display: flex;
+	overflow: scroll;
+	scroll-behavior: smooth;
+}
+.ensemble-fleche {
+	display: flex;
+	margin: auto;
+	align-items: center;
+	gap: 30px;
+}
+.ensemble-fleche img{
+	width: 100px;
+	min-height: 100px;
+	display: flex;
+	margin: auto;
+}
+::-webkit-scrollbar{
+	 display: none;
+}
+.carte {
+	border: 1px solid whitesmoke;
+	height: 200px;
+	width: 600px;
+transition-duration: 1000ms;
+margin: 5px;
+z-index: 1;
+}
+.carte0{
+	background: url(pictures/Sunset.png);
+	background-size: cover;
+}
+.carte1{
+	background: url(pictures/artificiel.png);
+	background-size: cover;
+}
+.carte2{
+	background: url(pictures/Neymar-1.png);
+	background-size: cover;
+}
+.carte3{
+	background: url(pictures/ardentes.png);
+	background-size: cover;
+}
+.carte4{
+	background: url(pictures/Kekra-1.png);
+	background-size: cover;
+}
