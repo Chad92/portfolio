@@ -71,6 +71,7 @@ let sliderImages = document.querySelectorAll('.slide');
   });
 
   startSlide();
+  
   const navSlide = () => {
    const menu = document.querySelector('.menu');
    const nav = document.querySelector('.menu-list');

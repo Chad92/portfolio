@@ -502,3 +502,40 @@ text-align:center;
 #mynav {
 	top: 0px !important;
 }
+.boutton-precedent{
+	background-color: orange;
+	width: 100px;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	padding: 10px;
+	border-radius: 2ch;
+	border: none;
+
+}
+.boutton-precedent a {
+	text-decoration: none;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+}
+
+.boutton-suivant{
+	background-color: orange;
+	color: white;
+	width: 100px;
+	font-family: 'Poppins', sans-serif;
+	padding: 10px;
+	border-radius: 2ch;
+	border: none;
+}
+.boutton-suivant a {
+	text-decoration: none;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+}
+.ensemble-boutton{
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	gap: 50px;
+	margin: 20px;
+}
