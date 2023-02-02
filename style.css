@@ -281,13 +281,13 @@ height: 400px;
 	text-decoration: underline;
 	filter: drop-shadow(0 0 60px orange) drop-shadow(0 0 10px orange)
 }
-.slide {
+/* .slide {
 	padding-top: 80px;
 	padding-bottom: 80px;
 	display: flex;
 	overflow: scroll;
 	scroll-behavior: smooth;
-}
+} */
 .ensemble-fleche {
 	display: flex;
 	margin: auto;
@@ -330,4 +330,16 @@ z-index: 1;
 .carte4{
 	background: url(pictures/Kekra-1.png);
 	background-size: cover;
+}
+#slider {
+	position: relative;
+	width: 600px;
+	height: 400px;
+	overflow: hidden;
+}
+
+.slide {
+	position: absolute;
+	width: 100%;
+	height: 100%;
 }
