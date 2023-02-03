@@ -115,7 +115,7 @@ filter: drop-shadow(0 0 60px orange) drop-shadow(0 0 10px orange);
 	margin-right: 43%;
 }
 .boutton-cv {
-	background-color: #000;
+	background-color: rgb(57, 56, 56);
 	border: 1px solid orange;
 	text-decoration: none;
 	border-radius: 2ch;
@@ -127,8 +127,8 @@ color: white;
 }
 .boutton-cv a:hover{
 color: orange;
-font-weight: bold;
 text-decoration: none;
+transition: 0.3s;
 }
 .big-competences{
 	margin-top: 60px;
