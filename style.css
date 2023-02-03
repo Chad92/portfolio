@@ -109,6 +109,27 @@ filter: drop-shadow(0 0 60px orange) drop-shadow(0 0 10px orange);
 	color: orange;
 	font-weight: bold;
 }
+.cv{
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 43%;
+}
+.boutton-cv {
+	background-color: #000;
+	border: 1px solid orange;
+	text-decoration: none;
+	border-radius: 2ch;
+	padding: 10px;
+}
+.boutton-cv a{
+text-decoration: none;
+color: white;
+}
+.boutton-cv a:hover{
+color: orange;
+font-weight: bold;
+text-decoration: none;
+}
 .big-competences{
 	margin-top: 60px;
 }
