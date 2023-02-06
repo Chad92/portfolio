@@ -40,6 +40,27 @@
   animation: blob-scale calc( var(--time, 30s) * 0.5 ) ease-in-out 0s infinite;
   transform-origin: center;
 }
+.tk-blob3 {
+  animation: blob-turn var(--time, 30s) linear infinite;
+  fill: var(--fill, #7600f8);
+  position: relative;
+  left: 70%;
+  transform-origin: center;
+  width: 60px;
+  filter: drop-shadow(0 0 60px orange) drop-shadow(0 0 20px orange);
+  z-index: -1;
+
+}
+
+.tk-blob3 svg {
+  animation: blob-skew calc( var(--time, 30s) * 0.5 ) linear 0s infinite;
+  transform-origin: center;
+}
+
+.tk-blob3 svg path {
+  animation: blob-scale calc( var(--time, 30s) * 0.5 ) ease-in-out 0s infinite;
+  transform-origin: center;
+}
 
 @keyframes blob-turn {
   0% {

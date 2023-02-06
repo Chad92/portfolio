@@ -107,7 +107,7 @@ filter: drop-shadow(0 0 60px orange) drop-shadow(0 0 10px orange);
 .a-propos a:hover{
 	text-decoration: none;
 	color: orange;
-	font-weight: bold;
+	text-decoration: underline;
 }
 .cv{
 	display: flex;
@@ -289,10 +289,10 @@ height: 400px;
 .text-parcours a:hover {
 	text-decoration: none;
 	color: orange;
-	font-weight: bold;
-}
+text-decoration: underline;}
 .container-projet {
 	margin: 20px;
+	margin-top: 60px;
 }
 
 /* .slide {
@@ -346,8 +346,8 @@ z-index: 1;
 	background-size: cover;
 }
 #slider {
-	width: 600px;
-	height: 400px;
+	width: 1000px;
+	height: 600px;
 	overflow: hidden;
 	display: flex;
 	margin: auto;
@@ -412,6 +412,7 @@ z-index: 1;
 					.menu-list a:hover {
 									color: orange;
 									transition: 0.2s;
+									text-decoration: underline;
 					}
 
 .menu div{
@@ -588,4 +589,5 @@ color: white;
 	text-decoration: none;
 	color: orange;
 	transition: 0.3s;
+	text-decoration: underline;
 	}
