@@ -59,7 +59,7 @@ header ul li a{
 	position: relative;
 	font-size: 44px;
 	color: rgb(57, 56, 56);
-	width: 43.2%;
+	width: 43.3%;
 }
 .presentation::before{
 content: attr(data-text);
