@@ -372,7 +372,7 @@ z-index: 1;
 	align-items:center;
 	height:60px;
 	font-family:'Poppins', sans-serif;
-	background-color:rgba(0,0,0,0.2);
+	background-color:rgb(24, 23, 23);
 	position:fixed;
 	z-index:2;
 	width:100%;
@@ -560,3 +560,32 @@ text-align:center;
 	gap: 50px;
 	margin: 20px;
 }
+
+/* Contact */
+.big-contact {
+	margin-top: 40px;
+}
+.container-contact{
+	display: flex;
+	gap: 40px;
+	justify-content: center;
+	margin-top: 40px;
+}
+.container-contact img{
+width: 300px;
+height: 300px;
+border-radius: 100%;
+}
+.contact-texte{
+	display: grid;
+	align-items: center;
+}
+.contact-texte a{
+text-decoration: none;
+color: white;
+}
+.contact-texte a:hover{
+	text-decoration: none;
+	color: orange;
+	transition: 0.3s;
+	}
