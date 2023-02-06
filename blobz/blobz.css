@@ -2,7 +2,7 @@
   animation: blob-turn var(--time, 30s) linear infinite;
   fill: var(--fill, #7600f8);
   position: relative;
-  left: -10%;
+  left: -20%;
   transform-origin: center;
   width: 100px;
   filter: drop-shadow(0 0 60px orange) drop-shadow(0 0 20px orange);
